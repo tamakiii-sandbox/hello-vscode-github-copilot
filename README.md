@@ -57,6 +57,16 @@ Compiles TypeScript code into JavaScript in the `dist/` directory.
 - Jest for unit testing
 - Simple and clean project structure
 
+## CI/CD
+
+This project uses GitHub Actions for continuous integration. On every pull request and push to the main branch, the workflow will:
+
+- Build the TypeScript code
+- Run all tests
+- Verify compatibility with Node.js versions 16, 18, and 20
+
+The workflow configuration can be found in `.github/workflows/build-and-test.yml`.
+
 ## License
 
 ISC
